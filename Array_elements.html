@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // Modify or update and delete 
+
+    var a = ["sudesh", 21, "Male", "Student"];
+    document.write(a + "<br>");
+
+    a[1] = 22;
+    document.write(a + "<br>");
+    delete a[3];
+    document.write(a + "<br>");
+
+  </script>
+  <hr>
+  <script>
+    var a = ["Sudesh", "Pratik", "Panu", "Rohit", "Vivek", "Adrash", "Parth"];
+    document.write(a + "<br>");
+    a.sort();
+    document.write(a + "<br>");
+    a.reverse();
+    document.write(a + "<br>");
+  </script>
+  <hr>
+  <script>
+    //pop and push
+    document.write("<h2>push pop ex</h2>");
+    var a = ["Sudesh", "Pratik", "Panu", "Rohit", "Vivek", "Adrash", "Parth"];
+    document.write(a + "<br>");
+    a.pop();
+    a.pop();
+    document.write(a + "<br>");
+    a.push("Neha");
+    document.write(a + "<br>");
+
+
+  </script>
+  <hr>
+  <script>
+    document.write("<h2>shift and unshift</h2>");
+    var a = ["Sudesh", "Pratik", "Panu", "Rohit", "Vivek", "Adrash", "Parth"];
+    document.write(a + "<br>");
+    a.shift();
+    a.shift();
+    document.write(a + "<br>");
+    a.unshift("Tanu");
+    document.write(a + "<br>");
+  </script>
+  <hr>
+
+  <script>
+    document.write("<h2>Concat And Join</h2>");
+
+    var a = ["Sudesh", "Pratik", "Panu", "Rohit", "Vivek", "Adrash", "Parth"];
+    var b = ["arbaj", "samiksha", "tanuuuu", "apurva"];
+    var x = ["lekhit", "Akash"];
+
+    // Concat all three arrays
+    var c = a.concat(b, x);
+
+    document.write(c + "<br>");
+
+    // Join all values with "-"
+    var d = c.join("-");
+    document.write(d + "<br>");
+  </script><hr>
+  <script>
+    document.write("<h2>Slice ex</h2>")
+    var a = ["Sudesh", "Pratik", "Panu", "Rohit", "Vivek", "Adrash", "Parth"];
+    document.write(a + "<br>")
+
+    //Slice (start,end)
+    var b = a.slice(3,5);
+      document.write(b + "<br>")
+
+       document.write("<h2>Splice ex</h2>")
+        var a = ["Sudesh", "Pratik", "Panu", "Rohit", "Vivek", "Adrash", "Parth"];
+    document.write(a + "<br>")
+    //splice(index, how many delete,"newvalue")
+    a.splice(2,0,"Arbaj","Anand","ganesh");
+    document.write(a + "<br>")
+  </script>
+
+
+
+</body>
+
+</html>
